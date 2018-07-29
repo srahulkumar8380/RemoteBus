@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cantata_one"
+            android:text="Create Account"
+            android:textSize="30dp"
+            app:fontFamily="@font/cantata_one" />
+        <EditText
+            android:id="@+id/sign_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_margin="20dp"
+            android:background="@drawable/userpass_stroke"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="15dp"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif"
+            android:hint="@string/text_name"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sign_username"
+            android:layout_margin="20dp"
+            android:background="@drawable/userpass_stroke"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="15dp"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif"
+            android:hint="@string/text_username"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_email"
+            android:layout_margin="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/userpass_stroke"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="15dp"
+            android:elevation="4dp"
+            android:fontFamily="sans-serif"
+            android:hint="@string/text_password"
+            android:inputType="textWebPassword"
+            android:padding="10dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/signup_id"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signup_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/text_createAccount"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

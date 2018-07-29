@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/my_bookings"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory="100"
+        android:title="My Bookings"
+        />
+    <item
+        android:id="@+id/book_tickets"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory="100"
+        android:title="Book Tickets"
+        />
+    <item
+        android:id="@+id/bus_tracker"
+        android:icon="@drawable/ic_person"
+        android:orderInCategory="100"
+        android:title="Bus Tracker"
+        />
+</menu>
